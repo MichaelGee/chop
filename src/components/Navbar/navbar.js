@@ -56,20 +56,19 @@ const Navbar = () => {
       <div className='curved-banner'>
         <div className='banner'>
           <h1 className='banner-text font-thin text-center'>
-            What you cookin' ?
-            <br />
-            Share it with everyone!
+            <p>What you cookin' ?</p>
+            <p>Share it with everyone!</p>
           </h1>
           <div className='buttons flex justify-between my-3 space-x-3'>
             <a
               href='#'
-              className='inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 hover:border-white border-transparent hover:text-white hover:bg-transparent bg-white mt-4 px-8 py-3 lg:mt-0'
+              className='inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 hover:border-white border-transparent hover:text-white hover:bg-transparent bg-white mt-4 sm:px-8 sm:py-3 px-5 py-2 lg:mt-0'
             >
               Log In
             </a>
             <a
               href='#'
-              className='inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 px-8 py-3 lg:mt-0'
+              className='inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 sm:px-8 sm:py-3 px-5 py-2 lg:mt-0'
             >
               Sign In
             </a>
