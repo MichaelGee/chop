@@ -26,11 +26,8 @@
 //   Main body
 
 img{
-    min-height: 50vh;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    justify-content: center; 
+    margin: 0 auto;
+    width: 100%; 
 }
 
 h3{
@@ -40,7 +37,16 @@ h3{
     text-align: center;
     justify-content: center;  
 }
- 
+
+// Footer
+.footer{
+    background: #054846;
+    color: white;
+}
+ .list-reset{
+    margin: 0 auto;
+    width: 100%;
+ }
 
   @media screen and (max-width:800px){
       .curved-banner{
@@ -48,6 +54,15 @@ h3{
               .banner-text{
                   font-size: 2.5em;
               }
+          }
+      }
+      .first, .second, .third{
+          flex-direction: column;
+          img{
+              width: 75%;
+          }
+          h3{
+              font-size: 0.8em;
           }
       }
   }

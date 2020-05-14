@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 const Navbar = () => {
   /* const [open, setOpen] = React.useEffect(false); */
@@ -16,12 +17,21 @@ const Navbar = () => {
             className='flex items-center px-3 py-2 text-teal-200 border-teal-400 hover:text-white hover:border-white'
           >
             <svg fill='currentColor' viewBox='0 0 20 20' class='w-6 h-6'>
-              <path
-                x-show='!open'
-                fill-rule='evenodd'
-                d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z'
-                clip-rule='evenodd'
-              ></path>
+              {isExpanded === false ? (
+                <path
+                  x-show='!open'
+                  fill-rule='evenodd'
+                  d='M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM9 15a1 1 0 011-1h6a1 1 0 110 2h-6a1 1 0 01-1-1z'
+                  clip-rule='evenodd'
+                ></path>
+              ) : (
+                <path
+                  x-show='open'
+                  fill-rule='evenodd'
+                  d='M4.293 4.293a1 1 0 011.414 0L10 8.586l4.293-4.293a1 1 0 111.414 1.414L11.414 10l4.293 4.293a1 1 0 01-1.414 1.414L10 11.414l-4.293 4.293a1 1 0 01-1.414-1.414L8.586 10 4.293 5.707a1 1 0 010-1.414z'
+                  clip-rule='evenodd'
+                ></path>
+              )}
             </svg>
           </button>
         </div>
@@ -60,17 +70,19 @@ const Navbar = () => {
             <p>Share it with everyone!</p>
           </h1>
           <div className='buttons flex justify-between my-3 space-x-3'>
-            <a
-              href='#'
-              className='inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 hover:border-white border-transparent hover:text-white hover:bg-transparent bg-white mt-4 sm:px-8 sm:py-3 px-5 py-2 lg:mt-0'
-            >
-              Log In
-            </a>
+            <Link to='/login'>
+              <a
+                href='#'
+                className='inline-block text-sm px-4 py-2 leading-none border rounded text-teal-500 hover:border-white border-transparent hover:text-white hover:bg-transparent bg-white mt-4 sm:px-8 sm:py-3 px-5 py-2 lg:mt-0'
+              >
+                Log In
+              </a>
+            </Link>
             <a
               href='#'
               className='inline-block text-sm px-4 py-2 leading-none border rounded text-white border-white hover:border-transparent hover:text-teal-500 hover:bg-white mt-4 sm:px-8 sm:py-3 px-5 py-2 lg:mt-0'
             >
-              Sign In
+              Sign Up
             </a>
           </div>
         </div>

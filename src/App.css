@@ -33,17 +33,8 @@
 }
 
 img {
-  min-height: 50vh;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  text-align: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
+  margin: 0 auto;
+  width: 100%;
 }
 
 h3 {
@@ -60,9 +51,31 @@ h3 {
           justify-content: center;
 }
 
+.footer {
+  background: #054846;
+  color: white;
+}
+
+.list-reset {
+  margin: 0 auto;
+  width: 100%;
+}
+
 @media screen and (max-width: 800px) {
   .curved-banner .banner .banner-text {
     font-size: 2.5em;
+  }
+  .first, .second, .third {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .first img, .second img, .third img {
+    width: 75%;
+  }
+  .first h3, .second h3, .third h3 {
+    font-size: 0.8em;
   }
 }
 

@@ -1,7 +1,7 @@
 import React from "react";
-import Diet from "../../images/diet.png";
-import Plate from "../../images/plate.png";
-import Profile from "../../images/profile.png";
+import Diet from "../../../images/diet.png";
+import Post from "../../../images/post.png";
+import Profile from "../../../images/profile.png";
 
 const Mainbody = () => {
   return (
@@ -10,7 +10,7 @@ const Mainbody = () => {
         <div className='flex-auto'>
           <img src={Profile} className='w-full' />
         </div>
-        <div className='flex-auto px-12'>
+        <div className='flex-auto px-24'>
           <h3>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde error
             sapiente, impedit quos perferendis deleniti voluptas ratione eos
@@ -20,7 +20,7 @@ const Mainbody = () => {
         </div>
       </section>
       <section className='second flex mt-12'>
-        <div className='flex-auto px-12'>
+        <div className='flex-auto px-24'>
           <h3>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde error
             sapiente, impedit quos perferendis deleniti voluptas ratione eos
@@ -34,9 +34,9 @@ const Mainbody = () => {
       </section>
       <section className='third flex mt-12'>
         <div className='flex-auto'>
-          <img src={Plate} className='w-full' />
+          <img src={Post} className='w-full' />
         </div>
-        <div className='flex-auto px-12'>
+        <div className='flex-auto px-24'>
           <h3>
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Unde error
             sapiente, impedit quos perferendis deleniti voluptas ratione eos
