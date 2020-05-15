@@ -3,7 +3,7 @@ import Navbar from "../Home/Navbar/navbar";
 import User from "../../images/user2.png";
 import Lock from "../../images/lock2.png";
 
-const Login = () => {
+const Signup = () => {
   return (
     <div>
       <Navbar />
@@ -64,4 +64,4 @@ const Login = () => {
   );
 };
 
-export default Login;
+export default Signup;
