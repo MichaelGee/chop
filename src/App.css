@@ -87,6 +87,21 @@ h3 {
   background-color: #125e5c;
 }
 
+.signup-form {
+  background: #F0FFF0;
+}
+
+.signup-btn {
+  background: #054A49;
+  color: white;
+  width: 100%;
+  text-align: center;
+}
+
+.signup-btn:hover {
+  background-color: #125e5c;
+}
+
 @media screen and (max-width: 800px) {
   .curved-banner .banner .banner-text {
     font-size: 2.5em;
