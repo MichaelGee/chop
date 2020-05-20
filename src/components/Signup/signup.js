@@ -9,11 +9,11 @@ const Signup = () => {
     <div>
       <Navbar />
       <div className='form-container'>
-        <div className='signup-form flex flex-col  px-8 py-6 mx-auto rounded-lg max-w-xs shadow-xl'>
+        <div className='signup-form flex flex-col px-8 py-6 mx-auto max-w-xs '>
           <form>
             <div className='mb-4'>
               <label
-                className='block text-black text-sm font-bold mb-2 '
+                className='block text-black text-sm font-normal mb-2 '
                 for='username'
               >
                 Email
@@ -23,7 +23,7 @@ const Signup = () => {
                   <img src={Email} className='w-5' />
                 </div>
                 <input
-                  className='flex appearance-none block pr-4 pl-10 w-full bg-gray-200 text-black border border-grey-lighter rounded py-3 px-4'
+                  className='flex appearance-none block pr-4 pl-10 w-full bg-gray-200 text-black border border-black rounded sm:py-3 py-2  px-4'
                   id='email'
                   type='text'
                   placeholder='Email'
@@ -32,7 +32,7 @@ const Signup = () => {
             </div>
             <div className='mb-4'>
               <label
-                className='block text-black text-sm font-bold mb-2 '
+                className='block text-black text-sm font-normal mb-2 '
                 for='username'
               >
                 Username
@@ -42,7 +42,7 @@ const Signup = () => {
                   <img src={User} className='w-5' />
                 </div>
                 <input
-                  className='flex appearance-none block pr-4 pl-10 w-full bg-gray-200 text-black border border-grey-lighter rounded py-3 px-4'
+                  className='flex appearance-none block pr-4 pl-10 w-full bg-gray-200 text-black border border-black rounded sm:py-3 py-2  px-4'
                   id='username'
                   type='text'
                   placeholder='Username'
@@ -51,7 +51,7 @@ const Signup = () => {
             </div>
             <div className='mb-4'>
               <label
-                className='block text-black text-sm font-bold mb-2'
+                className='block text-black text-sm font-normal mb-2'
                 for='password'
               >
                 Password
@@ -61,7 +61,7 @@ const Signup = () => {
                   <img src={Lock} className='w-5' />
                 </div>
                 <input
-                  className='appearance-none block w-full pr-4 pl-10 bg-gray-200 text-black border border-grey-lighter rounded py-3 px-4'
+                  className='appearance-none block w-full pr-4 pl-10 bg-gray-200 text-black border border-black rounded sm:py-3 py-2 px-4'
                   id='password'
                   type='password'
                   placeholder='Password'
@@ -70,7 +70,7 @@ const Signup = () => {
             </div>
             <div className='mb-6'>
               <label
-                className='block text-black text-sm font-bold mb-2'
+                className='block text-black text-sm font-normal mb-2'
                 for='password'
               >
                 Re-Enter Password
@@ -80,19 +80,16 @@ const Signup = () => {
                   <img src={Lock} className='w-5' />
                 </div>
                 <input
-                  className='appearance-none block w-full pr-4 pl-10 bg-gray-200 text-black border border-grey-lighter rounded py-3 px-4'
+                  className='appearance-none block w-full pr-4 pl-10 bg-gray-200 text-black border border-black rounded sm:py-3 py-2 px-4'
                   id='re-password'
                   type='password'
                   placeholder='Re-enter Password'
                 />
               </div>
             </div>
-            <p className='text-red-500 text-xs italic'>
-              Please choose a password.
-            </p>
             <a
               href='#'
-              className='signup-btn inline-block text-sm px-4 py-2 leading-none border rounded  mt-4 sm:px-8 sm:py-3 px-5 py-2 lg:mt-0'
+              className='signup-btn inline-block text-sm px-4 py-2 leading-none border rounded mt-0 sm:px-8 py-3 px-5'
             >
               Sign Up
             </a>

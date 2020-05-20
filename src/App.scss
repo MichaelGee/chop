@@ -57,7 +57,7 @@ h3{
     height: 80vh;
 }
 .login-form{
-    background:#F0FFF0;
+    background:transparent;
 } 
 
 .login-btn{
@@ -72,7 +72,7 @@ h3{
 
 // Signup
 .signup-form{
-    background:#F0FFF0;
+    background:transparent;
 } 
 
 .signup-btn{
@@ -83,6 +83,12 @@ h3{
     &:hover{
         background-color: #125e5c;
     }
+}
+
+//Feeds card
+
+.feeds-card{
+    background: #ffffff;
 }
 
   @media screen and (max-width:800px){
