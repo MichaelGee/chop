@@ -638,6 +638,7 @@ module.exports = {
     },
   },
   variants: {
+    transitionDuration: ["responsive", "hover", "focus"],
     accessibility: ["responsive", "focus"],
     alignContent: ["responsive"],
     alignItems: ["responsive"],

@@ -33,10 +33,10 @@ const Mainbody = () => {
           </div>
         </div>
       </div>
-      <div className='body-contaniner mt-20'>
+      <div className='body-contaniner mt-20 text-gray-700'>
         <section className='first flex'>
           <div className='flex-auto'>
-            <img src={Profile} className='w-full' />
+            <img src={Profile} alt='profile_image' className='w-full' />
           </div>
           <div className='flex-auto px-24'>
             <h3>
@@ -57,12 +57,12 @@ const Mainbody = () => {
             </h3>
           </div>
           <div className='flex-auto'>
-            <img src={Diet} className='w-full' />
+            <img src={Diet} alt='diet_img' className='w-full' />
           </div>
         </section>
         <section className='third flex mt-12'>
           <div className='flex-auto'>
-            <img src={Post} className='w-full' />
+            <img src={Post} alt='post_img' className='w-full' />
           </div>
           <div className='flex-auto px-24'>
             <h3>

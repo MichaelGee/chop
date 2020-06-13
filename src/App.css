@@ -1,5 +1,11 @@
+body {
+  scroll-behavior: smooth !important;
+}
+
 .navbar {
   background-color: #054846 !important;
+  top: 0;
+  overflow: hidden;
 }
 
 .curved-banner {
@@ -91,22 +97,43 @@ h3 {
   background: transparent;
 }
 
-.signup-btn {
+.signup-form .signup-btn {
   background: #054A49;
   color: white;
   width: 100%;
   text-align: center;
 }
 
-.signup-btn:hover {
+.signup-form .signup-btn:hover {
   background-color: #125e5c;
 }
 
-.feeds-card {
+.feeds-card-container {
+  margin-top: 8rem;
+}
+
+.feeds-card-container .feeds-card {
   background: #ffffff;
 }
 
+.feeds-navbar {
+  background-color: #054846 !important;
+  top: 0;
+  overflow: hidden;
+}
+
+.notify {
+  width: 4%;
+}
+
 @media screen and (max-width: 800px) {
+  .curved-banner {
+    border-bottom-left-radius: 0% 0%;
+    border-bottom-right-radius: 0% 0%;
+  }
+  .curved-banner .banner {
+    min-height: 30vh;
+  }
   .curved-banner .banner .banner-text {
     font-size: 2.5em;
   }
@@ -124,9 +151,18 @@ h3 {
   }
 }
 
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 460px) {
+  .curved-banner {
+    height: 32vh;
+  }
+  .curved-banner .banner {
+    min-height: 35vh;
+  }
   .curved-banner .banner .banner-text {
-    font-size: 1.5em;
+    font-size: 1rem;
+  }
+  .notify {
+    width: 8%;
   }
 }
 /*# sourceMappingURL=App.css.map */

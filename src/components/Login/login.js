@@ -19,7 +19,7 @@ const Login = () => {
               </label>
               <div className='relative'>
                 <div className='absolute inset-y-0 left-0 pl-2 flex items-center '>
-                  <img src={User} className='w-5' />
+                  <img src={User} alt='' className='w-5' />
                 </div>
                 <input
                   className='flex appearance-none block pr-4 pl-10 w-full bg-gray-200 text-black border border-black rounded sm:py-3 py-2 px-4'
@@ -38,7 +38,7 @@ const Login = () => {
               </label>
               <div className='relative'>
                 <div className='absolute inset-y-0 left-0 pl-2 flex items-center '>
-                  <img src={Lock} className='w-5' />
+                  <img src={Lock} alt='' className='w-5' />
                 </div>
                 <input
                   className='appearance-none block w-full pr-4 pl-10 bg-gray-200 text-black border border-black rounded sm:py-3 py-2 px-4'
