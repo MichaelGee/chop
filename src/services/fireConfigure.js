@@ -50,5 +50,5 @@ class fire {
 
 }
 
-
+export default new fire();
 
