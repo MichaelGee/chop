@@ -1,10 +1,10 @@
 import React from "react";
 import "./App.css";
 import { Route, BrowserRouter as Router, Switch } from "react-router-dom";
-import Home from "./components/Home/home";
-import Login from "./components/Login/login";
-import Signup from "./components/Signup/signup";
-import Feeds from "./components/Feeds/feeds";
+import Home from "./pages/home";
+import Login from "./pages/login";
+import Signup from "./pages/signup";
+import Feeds from "./pages/feeds";
 
 function App() {
   return (

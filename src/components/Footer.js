@@ -1,6 +1,6 @@
 import React from "react";
 
-const Footer = () => {
+export const Footer = () => {
   return (
     <div>
       <section className='footer py-12 w-full'>
@@ -88,4 +88,4 @@ const Footer = () => {
   );
 };
 
-export default Footer;
+

@@ -1,10 +1,10 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import Diet from "../../../images/diet.png";
-import Post from "../../../images/post.png";
-import Profile from "../../../images/profile.png";
+import Diet from "../images/diet.png";
+import Post from "../images/post.png";
+import Profile from "../images/profile.png";
 
-const Mainbody = () => {
+export const MainBody = () => {
   return (
     <div>
       <div className='curved-banner'>
@@ -78,4 +78,4 @@ const Mainbody = () => {
   );
 };
 
-export default Mainbody;
+

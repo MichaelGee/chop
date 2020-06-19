@@ -1,7 +1,7 @@
 import React from "react";
-import Notify from "../../images/notifications.svg";
+import Notify from "../images/notifications.svg";
 
-const FeedsNav = () => {
+export const FeedsNav = () => {
   return (
     <div>
       <nav className='feeds-navbar flex items-center justify-between  py-3 px-6 fixed w-full z-10'>
@@ -28,4 +28,4 @@ const FeedsNav = () => {
   );
 };
 
-export default FeedsNav;
+
