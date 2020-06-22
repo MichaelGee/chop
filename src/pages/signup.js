@@ -1,12 +1,12 @@
 import React from "react";
 import {Navbar} from "../components/Navbar";
-import {SignupFrom} from "../components/SignupForm";
+import {SignupForm} from "../components/SignupForm";
 
 const Signup = () => {
   return (
     <div>
       <Navbar />
-      <SignupFrom/>
+      <SignupForm/>
     </div>
   );
 };

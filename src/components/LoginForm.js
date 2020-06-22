@@ -1,8 +1,30 @@
 import React from 'react';
 import User from "../images/user2.png";
 import Lock from "../images/lock2.png";
+import fire from "../services/fireConfigure";
+import firebase from "firebase";
+import StyledFirebaseAuth from "react-firebaseui/StyledFirebaseAuth";
 
 export const LoginForm =()=>{
+    const [signedIn, setSignedIn] = React.useState(false);
+
+    React.useEffect(() => {
+        fire.isInitialized(user => {
+            setSignedIn(!!user);
+        });
+    });
+
+    const uiConfig = {
+        // Popup signin flow rather than redirect flow.
+        signInFlow: "popup",
+        // We will display Google and Facebook as auth providers.
+        signInOptions: [firebase.auth.GoogleAuthProvider.PROVIDER_ID],
+        callbacks: {
+            // Avoid redirects after sign-in.
+            signInSuccess: () => false
+        }
+    };
+
     return(
         <div className='form-container'>
             <div className='login-form flex flex-col px-8 py-6 mx-auto max-w-xs'>
@@ -54,6 +76,7 @@ export const LoginForm =()=>{
                     <p className='mt-3 text-black text-xs'>
                         <a href='#'>Forgotten password?</a>
                     </p>
+                    <StyledFirebaseAuth className='google' uiConfig={uiConfig} firebaseAuth={firebase.auth()} />
                 </form>
             </div>
         </div>
